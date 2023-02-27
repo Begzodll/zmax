@@ -6,6 +6,8 @@ import Quote from "../../Components/FormQuote/Quote";
 import OurService from "./OurService";
 import LocalMoving from "./LocalMoving";
 import Process from "./Process";
+import Comments from "./Comments";
+import TextChanging from "./TextChanging";
 
 const HomeIndex = () => {
     return(
@@ -18,6 +20,8 @@ const HomeIndex = () => {
             <OurService/>
             <LocalMoving/>
             <Process/>
+            <Comments/>
+            <TextChanging/>
         </div>
     )
 }

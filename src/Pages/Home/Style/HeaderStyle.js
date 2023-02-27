@@ -34,7 +34,7 @@ export const CardItem = styled.div`
   width: 70%;
   border-radius: 20px;
   margin: 3rem auto;
-  border: 1px solid #c3c3c3;
+  border: 1px solid #F1F6FF;
 `
 export const ImageContainer = styled.div`
   background-image: url(${({src}) => src});
@@ -99,7 +99,6 @@ export const SliderBlock = styled.div`
   display: flex;
   justify-content: space-between;
 `
-
 
 // Our Service
 export const OurWorkContainer = styled.div`
@@ -545,4 +544,89 @@ export const TextBodyProcess = styled.p`
     width: 80%;
     margin: 0 auto;
   }
+`
+
+//Comments
+export const CommentsContainer = styled.div`
+  width: 90%;
+  margin: 10rem auto;
+  height: auto;
+  border-radius: 50px;
+  background: #F1F6FF;
+  padding: 4rem;
+  position: relative;
+  @media (max-width: 572px) {
+    padding: 2rem;
+  }
+`
+export const TitleComments = styled.div`
+  font-size: 25px;
+  font-weight: 550;
+  color: #1F276E;
+  margin: 0 0 4rem 0;
+  @media (max-width: 900px) {
+    font-size: 20px;
+  }
+`
+export const DotsComments = styled.img`
+  position: absolute;
+  bottom: 0;
+  right: 0;
+`
+export const FlexContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  @media (max-width: 500px) {
+    flex-direction: column;
+  }
+`
+export const BtnGroup = styled.div`
+  display: flex;
+`
+export const CommentsCard = styled.div`
+  overflow: hidden;
+  width: 400px;
+  height: auto;
+  background: #fff;
+  padding: 3rem;
+  margin: 1rem 0;
+  border-radius: 20px;
+  @media(max-width: 500px){
+    padding: 1rem;
+    width: 100%;
+  }
+`
+export const CardProfile = styled.div`
+
+`
+export const ImageProfile = styled.img`
+  margin: 0 1rem 0 0;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+`
+export const JobTitle = styled.div`
+
+`
+export const NameProfile = styled.div`
+  color: #377EF9;
+  font-weight: 550;
+  font-size: 20px;
+`
+export const Responsibility = styled.div`
+  color: #B4B4B4;
+  font-size: 14px;
+  line-height: 10px;
+`
+export const TitleCommentsCard = styled.div`
+  margin: 1rem 0;
+  color: #1E266D;
+  font-size: 20px;
+  
+`
+export const DescCommentsCard = styled.div`
 `
