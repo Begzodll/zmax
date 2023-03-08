@@ -108,6 +108,7 @@ export const OurWorkContainer = styled.div`
   padding: 4rem;
   border-radius: 40px;
   background: #F1F6FF;
+  overflow: hidden;
   @media (max-width: 1037px) {
     padding: 3rem 8rem;
   }
@@ -591,7 +592,7 @@ export const CommentsCard = styled.div`
   padding: 3rem;
   margin: 1rem 0;
   border-radius: 20px;
-  @media(max-width: 500px){
+  @media (max-width: 500px) {
     padding: 1rem;
     width: 100%;
   }
@@ -626,7 +627,176 @@ export const TitleCommentsCard = styled.div`
   margin: 1rem 0;
   color: #1E266D;
   font-size: 20px;
-  
+
 `
 export const DescCommentsCard = styled.div`
+`
+
+//Changing Text
+export const ContainerChangingText = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 4rem;
+`
+export const IndexText = styled.div`
+  display: flex;
+  font-size: 38px;
+  color: #1E266D;
+  font-weight: bold;
+  text-align: center;
+
+  span {
+    margin: 0 5px;
+  }
+
+  @media (max-width: 747px) {
+    font-size: 30px;
+    text-align: center;
+  }
+  @media (max-width: 476px) {
+    font-size: 23px;
+    text-align: center;
+    span {
+      margin: 0 3px;
+    }
+  }
+  @media (max-width: 428px) {
+    font-size: 19px;
+  }
+
+`
+
+export const ChangingTextContainer = styled.div`
+
+`
+
+export const SubTextChangingText = styled.div`
+  color: #B4B4B4;
+  width: 50%;
+  margin: 1rem 0;
+  font-weight: 500;
+  @media (max-width: 1240px) {
+    text-align: center;
+  }
+  @media (max-width: 747px) {
+    width: 100%;
+  }
+  @media (max-width: 476px) {
+    font-size: 14px ;
+    text-align: center;
+    span {
+      margin: 0 3px;
+    }
+  }
+
+`
+
+export const BtnGroupChangingPage = styled.div`
+
+`
+
+// FAQ
+export const FaqMainContainer = styled.div`
+  width: 80%;
+  margin: 4rem auto 0 auto;
+  background: #F1F6FF;
+  padding: 3rem;
+  border-radius: 20px;
+  @media(max-width: 1130px){
+    width: 95%;
+  }
+  @media(max-width: 420px){
+    padding: 2rem  10px;
+  }
+`
+export const TitleFaq = styled.div`
+  font-size: 25px;
+  text-align: center;
+  color: #1E266D;
+  font-weight: bold;
+  width: 50%;
+  @media(max-width: 1130px){
+    width: 80%;
+  }
+  @media(max-width: 561px){
+    width: 100%;
+    font-size: 20px;
+  }
+`
+export const SubTitleFaq = styled.div`
+  text-align: center;
+  color: #B4B4B4;
+  width: 50%;
+  @media(max-width: 1130px){
+    width: 80%;
+  }
+  @media(max-width: 561px){
+    width: 100%;
+    font-size: 15px;
+  }
+`
+export const TitleContainerFaq = styled.div`
+  width: 100%;
+  height: auto;
+  padding: 0 0 4rem 0 ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+`
+export const FaqBlockContainer = styled.div`
+  display: flex;
+  justify-content: space-between;
+  @media(max-width: 992px){
+    flex-direction: column;
+  }
+`
+export const BoxMailing = styled.div`
+  width: 50%;
+  height: auto;
+  @media(max-width: 992px){
+    width: 100%;
+  }
+`
+export const FormMailing = styled.div`
+  width: 80%;
+  border-radius: 20px;
+  margin: 0 auto;
+  padding: 1rem ;
+  @media(max-width: 992px){
+    margin: 3rem auto 0 auto;
+  }
+  @media(max-width: 420px){
+    padding: 0;
+  }
+`
+export const FormTitle = styled.div`
+  color: #1E266D;
+  font-weight: bold;
+  text-align: center;
+  font-size: 20px;
+  @media(max-width: 420px){
+    width: 100%;
+    font-size:18px;
+  }
+`
+export const FormSubTitle = styled.div`
+  color: #B4B4B4;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  @media(max-width: 1130px){
+    width: 85%;
+  }
+  @media(max-width: 420px){
+    width: 100%;
+    font-size:15px;
+  }
+`
+export const AccordionText = styled.span`
+    @media(max-width: 430px){
+      font-size: 16px;
+    }
 `

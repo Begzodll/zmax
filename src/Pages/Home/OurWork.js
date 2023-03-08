@@ -1,3 +1,5 @@
+import {useEffect} from "react";
+import AOS from "aos";
 import {
     Block,
     MainContainerOurWork,
@@ -57,11 +59,16 @@ const OurWork = () => {
         return 1
     }
 
+
+    useEffect(() => {
+        AOS.init()
+    }, [])
+
     return (
         <MainContainerOurWork>
             <Block>
-                <MainText>We don’t just move furniture, we move lives</MainText>
-                <SubText>Moving to a new home is a major life event – and that includes local moves. Local movers
+                <MainText data-aos={'fade-up'} data-aos-duration={'1000'}>We don’t just move furniture, we move lives</MainText>
+                <SubText data-aos={'fade-up'} data-aos-duration={'1500'}>Moving to a new home is a major life event – and that includes local moves. Local movers
                     understand that and want to make sure you feel at home before you even unpack a box.</SubText>
 
                 <Swiper

@@ -20,6 +20,8 @@ import png3 from '../../Assests/Media/png/restore.png';
 import image1 from '../../Assests/Media/image/localMoving-img-1.jpg';
 import image2 from '../../Assests/Media/image/localMoving-img-2.jpg';
 import dots from '../../Assests/Media/png/dots.png';
+import {useEffect} from "react";
+import AOS from "aos";
 const LocalMoving = () => {
 
     const optionsBlock = [
@@ -45,11 +47,14 @@ const LocalMoving = () => {
                 "business. Our New York movers show up on time."
         },
     ];
+    useEffect(() => {
+        AOS.init()
+    }, [])
     return (
         <LocalMovingContainer>
             <LocalMovingBlock>
                 <LocalMovingBox>
-                    <LocalMovingTitle>
+                    <LocalMovingTitle data-aos={'fade-right'} data-aos-duration={'700'}>
                         Let our local moving company give you a lift to your home
                     </LocalMovingTitle>
                     <OptionBlock>

@@ -1,25 +1,49 @@
-import {useCallback, useState, useEffect} from "react";
+import TextTransition, {presets} from "react-text-transition";
+import {useEffect, useState} from "react";
+import {
+    ContainerChangingText,
+    ChangingTextContainer,
+    SubTextChangingText,
+    IndexText,BtnGroupChangingPage
+} from "./Style/HeaderStyle";
 
 const TextChanging = () => {
 
-    const texts = ['First', "Second", "Third"]
 
-    const [text, setTexts] = useState('')
+    const TEXTS = [
+        "the best we can",
+        "all the work",
+        "the heavy lifting",
+        "the fastest"
+    ];
 
-    const shuffle = useCallback(() => {
-        const index = Math.floor(Math.random() * texts.length)
-        setTexts(texts[index])
-    })
+    const [index, setIndex] = useState(0);
 
-    useEffect(()=>{
-        const intId = setInterval(shuffle, 500)
-        return ()=> clearInterval(intId)
-    },[shuffle])
+    useEffect(() => {
+        const intervalId = setInterval(() =>
+                setIndex(index => index + 1),
+            3000 // every 3 seconds
+        );
+        return () => clearTimeout(intervalId);
+    }, []);
+    // const ind = TEXTS.length
 
     return (
-        <div>
-            Item: {text}
-        </div>
+        <ContainerChangingText>
+            <ChangingTextContainer>
+                <IndexText>
+                    <span>Let us do</span> {''} <TextTransition springConfig={presets.wobbly}>
+                    {TEXTS[index % TEXTS.length]}
+                </TextTransition>
+                </IndexText>
+            </ChangingTextContainer>
+            <SubTextChangingText>
+                After seeing how quality movers and moving services can have such a positive effect on our
+                customers' lives, we became committed to delivering the highest level of service every time.
+            </SubTextChangingText>
+            <BtnGroupChangingPage>
+            </BtnGroupChangingPage>
+        </ContainerChangingText>
     )
 }
 export default TextChanging

@@ -8,6 +8,7 @@ import LocalMoving from "./LocalMoving";
 import Process from "./Process";
 import Comments from "./Comments";
 import TextChanging from "./TextChanging";
+import FAQ from "./FAQ";
 
 const HomeIndex = () => {
     return(
@@ -22,6 +23,7 @@ const HomeIndex = () => {
             <Process/>
             <Comments/>
             <TextChanging/>
+            <FAQ/>
         </div>
     )
 }
