@@ -62,8 +62,7 @@ const Comments = () => {
     const getCountElement = () => {
         if (width > 1432) return 3;
         if (width > 982) return 2;
-        return 1
-    }
+        return 1}
 
     return (
         <CommentsContainer>

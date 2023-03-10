@@ -9,6 +9,8 @@ import Process from "./Process";
 import Comments from "./Comments";
 import TextChanging from "./TextChanging";
 import FAQ from "./FAQ";
+import Directions from "./Directions";
+import MapComponent from "./MapComponent";
 
 const HomeIndex = () => {
     return(
@@ -21,9 +23,11 @@ const HomeIndex = () => {
             <OurService/>
             <LocalMoving/>
             <Process/>
-            <Comments/>
+            <Directions/>
             <TextChanging/>
-            <FAQ/>
+            <Comments/>
+            <MapComponent/>
+            {/*<FAQ/>*/}
         </div>
     )
 }

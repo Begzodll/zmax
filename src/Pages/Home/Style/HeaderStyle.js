@@ -251,7 +251,6 @@ export const LocalMovingOptBoxBody = styled.p`
 export const LocalMovingBoxSize = styled.div`
   width: 100%;
   position: relative;
-  background: red;
 `
 const breatheAnimation = keyframes`
   0% {
@@ -277,6 +276,7 @@ const breatheAnimationTwo = keyframes`
   100% {
     top: 0;
   }
+
 `
 const dotsAnimation = keyframes`
   0% {
@@ -550,7 +550,7 @@ export const TextBodyProcess = styled.p`
 //Comments
 export const CommentsContainer = styled.div`
   width: 90%;
-  margin: 10rem auto;
+  margin: 5rem auto;
   height: auto;
   border-radius: 50px;
   background: #F1F6FF;
@@ -667,11 +667,9 @@ export const IndexText = styled.div`
   }
 
 `
-
 export const ChangingTextContainer = styled.div`
 
 `
-
 export const SubTextChangingText = styled.div`
   color: #B4B4B4;
   width: 50%;
@@ -692,7 +690,6 @@ export const SubTextChangingText = styled.div`
   }
 
 `
-
 export const BtnGroupChangingPage = styled.div`
 
 `
@@ -704,11 +701,11 @@ export const FaqMainContainer = styled.div`
   background: #F1F6FF;
   padding: 3rem;
   border-radius: 20px;
-  @media(max-width: 1130px){
+  @media (max-width: 1130px) {
     width: 95%;
   }
-  @media(max-width: 420px){
-    padding: 2rem  10px;
+  @media (max-width: 420px) {
+    padding: 2rem 10px;
   }
 `
 export const TitleFaq = styled.div`
@@ -717,10 +714,10 @@ export const TitleFaq = styled.div`
   color: #1E266D;
   font-weight: bold;
   width: 50%;
-  @media(max-width: 1130px){
+  @media (max-width: 1130px) {
     width: 80%;
   }
-  @media(max-width: 561px){
+  @media (max-width: 561px) {
     width: 100%;
     font-size: 20px;
   }
@@ -729,10 +726,10 @@ export const SubTitleFaq = styled.div`
   text-align: center;
   color: #B4B4B4;
   width: 50%;
-  @media(max-width: 1130px){
+  @media (max-width: 1130px) {
     width: 80%;
   }
-  @media(max-width: 561px){
+  @media (max-width: 561px) {
     width: 100%;
     font-size: 15px;
   }
@@ -740,7 +737,7 @@ export const SubTitleFaq = styled.div`
 export const TitleContainerFaq = styled.div`
   width: 100%;
   height: auto;
-  padding: 0 0 4rem 0 ;
+  padding: 0 0 4rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -749,14 +746,14 @@ export const TitleContainerFaq = styled.div`
 export const FaqBlockContainer = styled.div`
   display: flex;
   justify-content: space-between;
-  @media(max-width: 992px){
+  @media (max-width: 992px) {
     flex-direction: column;
   }
 `
 export const BoxMailing = styled.div`
   width: 50%;
   height: auto;
-  @media(max-width: 992px){
+  @media (max-width: 992px) {
     width: 100%;
   }
 `
@@ -764,11 +761,11 @@ export const FormMailing = styled.div`
   width: 80%;
   border-radius: 20px;
   margin: 0 auto;
-  padding: 1rem ;
-  @media(max-width: 992px){
+  padding: 1rem;
+  @media (max-width: 992px) {
     margin: 3rem auto 0 auto;
   }
-  @media(max-width: 420px){
+  @media (max-width: 420px) {
     padding: 0;
   }
 `
@@ -777,9 +774,9 @@ export const FormTitle = styled.div`
   font-weight: bold;
   text-align: center;
   font-size: 20px;
-  @media(max-width: 420px){
+  @media (max-width: 420px) {
     width: 100%;
-    font-size:18px;
+    font-size: 18px;
   }
 `
 export const FormSubTitle = styled.div`
@@ -787,16 +784,169 @@ export const FormSubTitle = styled.div`
   width: 70%;
   text-align: center;
   margin: 0 auto;
-  @media(max-width: 1130px){
+  @media (max-width: 1130px) {
     width: 85%;
   }
-  @media(max-width: 420px){
+  @media (max-width: 420px) {
     width: 100%;
-    font-size:15px;
+    font-size: 15px;
   }
 `
 export const AccordionText = styled.span`
-    @media(max-width: 430px){
-      font-size: 16px;
-    }
+  @media (max-width: 430px) {
+    font-size: 16px;
+  }
+`
+
+// Directions
+export const MainContainerDirections = styled.div`
+  width: 100%;
+  margin: 5rem auto;
+  background: #F1F6FF;
+  padding: 5rem 0;
+`
+export const BlockDirections = styled.div`
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  @media (max-width: 1163px) {
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    width: 60%;
+  }
+  @media (max-width: 670px) {
+    text-align: start;
+    width: 80%;
+  }
+  @media (max-width: 465px) {
+    text-align: start;
+    width: 90%;
+  }
+`
+export const BoxDirections = styled.div`
+  width: 50%;
+  height: auto;
+  @media (max-width: 1163px) {
+    width: 100%;
+  }
+`
+export const IntoText = styled.div`
+  font-size: 15px;
+  color: #414141;
+  @media (max-width: 465px) {
+    font-size: 13px;
+  }
+`
+export const TitleDirection = styled.div`
+  color: #414141;
+  font-size: 32px;
+  font-weight: bold;
+  margin: 1rem 0;
+  @media (max-width: 465px) {
+    font-size: 23px;
+    margin: .5rem 0 ;
+  }
+`
+export const SubTitleDirection = styled.div`
+  color: #414141;
+  width: 90%;
+  @media (max-width: 1163px) {
+    display: flex;
+    justify-content: center;
+  }
+  @media (max-width: 465px) {
+    font-size: 15px;
+  }
+`
+export const DescrDirection = styled.div`
+  color: #414141;
+  line-height: 28px;
+  font-weight: 500;
+  width: 90%;
+`
+export const TickGroup = styled.div`
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-gap: 10px;
+  margin: 40px 0;
+  text-align: start;
+  @media (max-width: 770px) {
+    display: flex;
+    flex-direction: column;
+  }
+`
+export const TickItems = styled.div`
+  position: relative;
+  margin: 0 0 0 30px;
+  font-weight: bold;
+  color: #414141;
+  font-size: 15px;
+
+  :before {
+    content: "";
+    position: absolute;
+    left: -30px;
+    top: 0;
+    background-image: url(${({tick}) => tick});
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+  }
+`
+export const ContainerMapComponent = styled.div`
+  width: 100%;
+  height: 200px;
+`
+export const MapStyle = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+`
+export const BoxLocation = styled.div`
+  width: 300px;
+  height: auto;
+  background: #F1F6FF;
+  border-radius: 20px;
+  position: absolute;
+  right: 90px;
+  padding: 2rem;
+`
+export const TitleBox = styled.div`
+  width: 90%;
+  background: #E11D07;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 15px;
+  color:#fff;
+  padding: 10px 2rem;
+`
+export const LocationBlock = styled.div`
+  
+`
+export const ItemLocation = styled.div`
+  position: relative;
+  text-align: center;
+  font-size: 14px;
+  &:before{
+    content:"";
+    position: absolute;
+    left: 0;
+    background-image: url(${({svg})=>svg});
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 20px;
+  }
 `
