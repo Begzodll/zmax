@@ -1,10 +1,11 @@
 import React, {useRef} from "react";
-import Style from './footer.module.scss';
-import {DoubleButton} from "../Buttons/Buttons";
-import {useWindowDimensions} from "../../helperts/helper";
 
 import {Navigation, Autoplay} from "swiper";
 import {Swiper, SwiperSlide} from 'swiper/react';
+
+import Style from './footer.module.scss';
+import {DoubleButton} from "../Buttons/Buttons";
+import {useWindowDimensions} from "../../helperts/helper";
 
 import partner1 from '../../Assests/Media/image/partner/partner1.jpg';
 import partner2 from '../../Assests/Media/image/partner/partner2.jpg';
