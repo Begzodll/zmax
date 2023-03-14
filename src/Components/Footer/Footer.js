@@ -7,14 +7,14 @@ import Style from './footer.module.scss';
 import {DoubleButton} from "../Buttons/Buttons";
 import {useWindowDimensions} from "../../helperts/helper";
 
-import partner1 from '../../Assests/Media/image/partner/partner1.jpg';
+import p1 from '../../Assests/Media/image/partner/partner1.jpg';
 import partner2 from '../../Assests/Media/image/partner/partner2.jpg';
 import partner3 from '../../Assests/Media/image/partner/part3.jpeg';
 
-function Footer({footer}) {
+function Footer() {
 
     const content = [
-        {id: 1, img: partner1},
+        {id: 1, img: p1},
         {id: 2, img: partner2},
         {id: 3, img: partner3},
     ]
