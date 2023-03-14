@@ -19,7 +19,7 @@ const NavbarPage = () => {
     return (
         <NavbarMainContainer>
             <Container>
-                <NavLogo data-aos={'fade-right'} data-aos-duration={'1250'} ><SubText>z</SubText>max movers</NavLogo>
+                <NavLogo><SubText>z</SubText>max movers</NavLogo>
                 <UnorderedList bool={active}>
                     <ListItem>Home</ListItem>
                     <ListItem>About</ListItem>

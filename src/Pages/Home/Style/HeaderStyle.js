@@ -907,8 +907,11 @@ export const MapStyle = styled.div`
   align-items: center;
   width: 80%;
   margin: 0 auto;
-  overflow: hidden;
+  //overflow: hidden;
   position: relative;
+  @media (max-width: 570px) {
+    margin: 0 auto 24rem auto;
+  }
 `
 export const BoxLocation = styled.div`
   width: 300px;
@@ -918,6 +921,14 @@ export const BoxLocation = styled.div`
   position: absolute;
   right: 90px;
   padding: 2rem;
+  @media (max-width: 570px) {
+    bottom: -340px;
+    left: 5%;
+  }
+  @media (max-width: 425px) {
+    width: 100%;
+    left: 0;
+  }
 `
 export const TitleBox = styled.div`
   width: 90%;
@@ -928,21 +939,22 @@ export const TitleBox = styled.div`
   text-transform: uppercase;
   font-weight: bold;
   font-size: 15px;
-  color:#fff;
+  color: #fff;
   padding: 10px 2rem;
 `
 export const LocationBlock = styled.div`
-  
+
 `
 export const ItemLocation = styled.div`
   position: relative;
   text-align: center;
   font-size: 14px;
-  &:before{
-    content:"";
+
+  &:before {
+    content: "";
     position: absolute;
     left: 0;
-    background-image: url(${({svg})=>svg});
+    background-image: url(${({svg}) => svg});
     background-size: cover;
     background-repeat: no-repeat;
     width: 20px;

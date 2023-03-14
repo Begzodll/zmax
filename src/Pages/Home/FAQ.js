@@ -92,7 +92,7 @@ const FAQ = () => {
                                 Our personal advisors will walk you through
                                 the full process step by step
                             </FormSubTitle>
-                            <div className="flex flex-col w-72 items-end gap-6 my-8">
+                            <div className="flex flex-col w-72 items-end gap-2 my-8">
                                 <Input size="md" label="Name" type={'text'}/> <br/>
                                 <Input size="lg" label="Email" type={'email'}/><br/>
                                 <Input size="lg" label="Tel" type={'number'}/><br/>
