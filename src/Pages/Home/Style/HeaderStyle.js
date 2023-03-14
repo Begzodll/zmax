@@ -697,7 +697,7 @@ export const BtnGroupChangingPage = styled.div`
 // FAQ
 export const FaqMainContainer = styled.div`
   width: 80%;
-  margin: 4rem auto 0 auto;
+  margin: 4rem auto 4rem auto;
   background: #F1F6FF;
   padding: 3rem;
   border-radius: 20px;
@@ -899,14 +899,13 @@ export const TickItems = styled.div`
 `
 export const ContainerMapComponent = styled.div`
   width: 100%;
-  height: 200px;
+  height: auto;
 `
 export const MapStyle = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
   width: 80%;
-  height: auto;
   margin: 0 auto;
   overflow: hidden;
   position: relative;

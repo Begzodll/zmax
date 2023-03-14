@@ -26,8 +26,8 @@ const HomeIndex = () => {
             <Directions/>
             <TextChanging/>
             <Comments/>
+            <FAQ/>
             <MapComponent/>
-            {/*<FAQ/>*/}
         </div>
     )
 }
